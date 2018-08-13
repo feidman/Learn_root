@@ -71,9 +71,10 @@ void macro1(){
     mycanvas->Print("graph_width_law.pdf");
     // test the self-def function
     KMEvent * myevent = new KMEvent();
-    cout << myevent->get(x);
+    std::cout << myevent->getx();
 }
 
 int main(){
     macro1();
+    return 0;
 }
