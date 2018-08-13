@@ -2,7 +2,7 @@
 //
 
 
-class KMEvent  {
+class KMEvent : public Object {
 
   private:
     double x,y,z; 

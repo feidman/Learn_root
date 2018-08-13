@@ -1,6 +1,7 @@
 //just for test 
 #include "KMEvent.h"
 
+ClassImp(KMEvent)
 
 KMEvent::KMEvent()
 {
