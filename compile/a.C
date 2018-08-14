@@ -5,11 +5,10 @@
 #include "KMEvent.h"
 
 
-
 void macro1(){
     //the values and the errors on the Y axis
     KMEvent * myevent = new KMEvent();
-    std::cout << myevent->getx();
+    printf("Here is the x_value:%f\n", myevent->getx());
 }
 
 int main(){
