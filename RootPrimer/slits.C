@@ -7,6 +7,10 @@
 double single(double *x, double *par){
     double const pi=4*atan(1.);
     return pow(sin(pi*par[0]*x[0])/(pi*par[0]*x[0]),2);
+    // par[0],and par[1]:parameters_1 and _2;
+    // var[0]:x
+    // var[1]:y, if var[1], it is a 2D funcion (a*x +b*y=0)
+
 }
 
 double nslit0(double *x, double *par){
@@ -26,9 +30,9 @@ void slits(){
     
     //request user input
     cout<<"slit width/g?";
-    scanf("%f",&r);
+    scanf("%f",&r); // e.g. 0.2
     cout<<"# of slits?";
-    scanf("%f",&ns);
+    scanf("%f",&ns); // e.g. 2
     cout<<"interference pattern for "<< ns <<"slits, width/distance:"<<r<<endl;
 
     //define function and set potions
