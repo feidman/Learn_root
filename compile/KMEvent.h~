@@ -19,6 +19,6 @@ class KMHit {
 	  int a,b,c;
 	public:
 	  KMHit();
-	  virtual ~KMHit(){};
+	  virtual ~KMHit();
 	  int geta();
 };

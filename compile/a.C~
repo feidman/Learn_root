@@ -10,7 +10,7 @@ void macro1(){
     //the values and the errors on the Y axis
     KMEvent * myevent = new KMEvent();
     KMHit * myhit = new KMHit();
-    cout<<"Here is the x_value:"<<myevent->getx()<<endl;
+    cout<<"Here is the x_value:"<<myhit->geta()*myevent->getx()<<endl;
 }
 
 int main(){

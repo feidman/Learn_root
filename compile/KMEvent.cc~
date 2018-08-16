@@ -20,7 +20,7 @@ KMEvent::~KMEvent()
 
 KMHit::KMHit()
 {
-	a=b=c=134;
+	a=b=c=100;
 };
 
 int KMHit::geta()
