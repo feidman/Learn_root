@@ -43,6 +43,9 @@ void macro1(){
 
     // Fit it to the graph and draw it
     graph.Fit(&f);
+    // For test to daaw the line alone
+    //f.SetParameter(0,0);
+    //f.SetParameter(1,6);
     f.DrawClone("Same");
 
     // Build and Draw a legend
@@ -66,8 +69,7 @@ void macro1(){
     mycanvas->Print("graph_width_law.pdf");
 }
 
-#ifndef __CINT__
 int main(){
     macro1();
+    return 0;
 }
-#endif

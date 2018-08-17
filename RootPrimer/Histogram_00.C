@@ -1,9 +1,11 @@
 //1st historgram example in ROOT
+#include "TF1.h"
+#include "TH1F.h"
 
 void Histogram_00(){
     TF1 efunc("efunc","exp([0]+[1]*x)",0.,5.);
-    efunc.SetParameter(0,1);
-    efunc.SetParameter(1,-1);
+    efunc.SetParameter(0,0);
+    efunc.SetParameter(1,1);
     //  TH1F h = TH1F("h","Example histogram",100,0.,5.);
     //  no graph displayed on the canvas if there is no poiter defined
     //  but with the environment of root it is OKEY
